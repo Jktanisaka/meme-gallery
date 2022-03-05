@@ -6,7 +6,7 @@ var gallery = document.querySelector('main');
 var imageUrlInput = document.querySelector('input');
 var addImageButton = document.querySelector('button');
 addImageButton.addEventListener('click', function () {
-  if (imageUrlInput !== '') {
+  if (imageUrlInput.value !== '') {
     imageUrls.push(imageUrlInput.value);
   }
   imageUrlInput.value = '';
